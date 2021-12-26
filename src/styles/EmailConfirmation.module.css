@@ -1,0 +1,11 @@
+.mainDiv {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 42px;
+    align-items: center;
+
+    color: #584BA9;
+
+    padding: 2.5% 8%;
+}

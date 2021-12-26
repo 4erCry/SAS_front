@@ -1,0 +1,44 @@
+.mainDiv {
+    padding: 2% 4% 30px 4%;
+    border-radius: 20px;
+
+    border: 1px solid #3b3c40;
+}
+
+.buttonsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nameDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #584BA9;
+}
+
+.roomDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 32px;
+}
+
+.nameDiv a {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nameDiv a:link {
+    color: #584BA9;
+    text-decoration: none;
+}
+
+.nameDiv a:visited {
+    color: #584BA9;
+    text-decoration: none;
+}

@@ -1,0 +1,96 @@
+.mainDiv
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5% 8%;
+}
+.allHousesText
+{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(88, 75, 169, 0.7);
+}
+.housesCount
+{
+    color: rgba(88, 75, 169, 0.7);
+}
+.housesGrid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 32px;
+}
+.createHouseDiv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.createHouseForm
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+.createHouseForm input
+{
+    background: #F4F4F6;
+    border-radius: 10px;
+    border: none;
+
+    width: 350px;
+    height: 32px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 108.02%;
+    /* or 15px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.colorDiv
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.createHouseForm input[type="color"]
+{
+    width: 40px;
+    height: 40px;
+}
+.createHouseForm label
+{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.createHouseForm button
+{
+    margin: 40px 0 0 0;
+}
+
+.deleteHouseForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}

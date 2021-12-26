@@ -1,0 +1,116 @@
+.mainDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 25px 0;
+}
+.registerFormDiv
+{
+    width: 540px;
+    background: #F4F4F6;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0 0 10px 0;
+}
+.registerForm
+{
+    margin: 0 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+}
+.registerForm h2
+{
+    margin: 48px 0 40px 0;
+}
+.registerForm input
+{
+    background: #FFFFFF;
+    margin: 0 0 40px 0;
+    border: 1px solid #3B3C40;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 352px;
+    height: 40px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.registerForm input::placeholder
+{
+    color: #A6A6A6;
+}
+.registerForm input[type="password"]
+{
+    border: 1px solid #CCCCCC;
+}
+.registerForm Button
+{
+    margin: 64px 0 104px 0;
+}
+.registerForm p
+{
+    width: 345px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #A6A6A6;
+}
+.registerForm a:link
+{
+    color: #4158b6;
+    text-decoration: none;
+}
+.registerForm a:visited
+{
+    color: #4158b6;
+    text-decoration: none;
+}
+.registerForm hr
+{
+    border: 1px solid #A6A6A6;
+    width: 352px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 480px)
+{
+    .mainDiv
+    {
+        padding: 15px 5px;
+    }
+    .registerFormDiv
+    {
+        width: 75%;
+    }
+    .registerForm input
+    {
+        margin: 0 0 25px 0;
+        width: 200%;
+    }
+    .registerForm Button
+    {
+        margin: 15px 0 15px 0;
+    }
+    .registerForm p
+    {
+        width: 150%;
+    }
+    .registerForm hr
+    {
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+}
