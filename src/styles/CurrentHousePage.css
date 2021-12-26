@@ -1,0 +1,172 @@
+.house-block {
+  margin: 80px 160px;
+}
+
+.house-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.house-name-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.house-name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #584ba9;
+}
+
+.house-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.house-buttons > * {
+  margin-right: 20px;
+}
+
+.house-room-quantity, .house-info .house-color {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #584ba9;
+}
+
+
+.house-rooms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.room-card {
+  width: 600px;
+  padding: 40px;
+  border: 1px solid #3B3C40;
+  border-radius: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 40px;
+}
+
+.room-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.room-buttons > * {
+  margin-left: 20px;
+}
+
+.room-name-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.room-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #584ba9;
+  text-decoration: none;
+}
+
+.room-quantity {
+  font-size: 20px;
+  font-weight: bold;
+  color: #584ba9;
+}
+
+.room-sensors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.sensor-card {
+  background: white;
+  width: 100px;
+  padding: 20px;
+  border: 1px solid #3B3C40;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(200px);
+  border-radius: 11px;
+  text-align: center;
+  color: #584ba9;
+}
+
+.sensor-card-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.room-create-form, .house-edit-form, .house-delete-form, .room-edit-form, .room-delete-form {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 540px;
+  height: 250px;
+  text-align: center;
+  margin: auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  color: #3B3C40;
+  padding: 30px;
+}
+
+.house-delete-form, .room-delete-form {
+  height: 200px;
+}
+
+.room-create-form > *, .house-edit-form > *, .house-delete-form > *, .room-edit-form > *, .room-delete-form > * {
+  margin: 20px auto;
+  display: block;
+}
+
+.room-create-form input[type='text'], .house-edit-form input[type='text'], .room-edit-form input[type='text'] {
+    width: 350px;
+    margin: 20px auto;
+    padding: 9px 5px;
+    background: #FFFFFF;
+    border: 1px solid #3B3C40;
+    /* box-sizing: border-box; */
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+.room-create-form input[type='text']:focus, .house-edit-form input[type='text']:focus, .room-edit-form input[type='text']:focus {
+    border: 1px solid #584BA9;
+    background-color: transparent;
+    outline: none;
+  }
+
+.room-color, .house-edit-form .house-color {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  align-items: center;
+}
+
+.room-create-form input[type='color'], .house-edit-form input[type='color'], .room-edit-form input[type='color'] {
+  margin-left: 10px;
+  height: 64px;
+}
+
+.house-delete-form-buttons, .room-delete-form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

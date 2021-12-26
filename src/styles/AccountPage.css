@@ -1,0 +1,83 @@
+.account-form
+{
+  width: 540px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  color: #3B3C40;
+  text-align: center;
+  box-sizing: border-box;
+}
+.account-form-login
+{
+  margin: 0 auto 66px auto;
+  padding-top: 10px;
+}
+.gen-token-form h3, .change-pass-form h3
+{
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+.gen-token-form .warning-text, .change-pass-form .warning-text
+{
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.gen-token-form input
+{
+  width: 350px;
+  margin: 20px auto;
+  padding: 9px 5px;
+  background: #FFFFFF;
+  border: 1px solid #3B3C40;
+  /* box-sizing: border-box; */
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.gen-token-form input:focus
+{
+  border: 1px solid #584BA9;
+  background-color: transparent;
+  outline: none;
+}
+.account-form-butt
+{
+  padding: 9px 5px;
+  margin: 0 auto;
+  width: 140px;
+  background: rgba(88, 75, 169, 0.7);
+  border-radius: 11px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.account-form-butt:hover
+{
+  opacity: 0.7;
+}
+.change-pass-form .account-form-butt
+{
+  margin: 20px auto;
+}
+.gen-token-form .error-text, .change-pass-form .error-text
+{
+  width: 350px;
+  margin: 10px auto;
+  color: red;
+}
+.only-text
+{
+  width: 700px;
+  margin: 100px auto;
+  font-size: 48px;
+  color: #3B3C40;
+  text-align: center;
+}
+@media (max-width: 480px)
+{
+
+}
