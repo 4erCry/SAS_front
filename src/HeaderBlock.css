@@ -1,0 +1,43 @@
+.header
+{
+  width: 100%;
+  height: 60px;
+  background: rgba(88, 75, 169, 0.7);
+  font-size: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.header-logo, .header-main-refs
+{
+  float: left;
+  margin-left: 60px;
+  height: 100%;
+}
+.header-sign-refs
+{
+  float: right;
+  margin-right: 60px;
+  height: 100%;
+}
+.header-logo a, .header-main-refs a, .header-sign-refs a
+{
+  display: inline-block;
+  height: 100%;
+  text-decoration: none;
+  mix-blend-mode: hard-light;
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-right: 60px;
+  padding: 20px 0;
+}
+.header-logo a:hover, .header-main-refs a:hover, .header-sign-refs a:hover
+{
+  opacity: 0.7;
+}
+@media (max-width: 480px) /*с днём сэндвича*/
+{
+  .link
+  {
+
+  }
+
+}
