@@ -1,0 +1,27 @@
+.rectangle1 {
+  display: inline-block;
+  width: 530px;
+  height: 410px;
+  background: rgb(24, 27, 184);
+}
+
+.rectangle2 {
+  display: inline-block;
+  width: 530px;
+  height: 410px;
+  background: rgb(138, 89, 44);
+}
+
+.rectangle3 {
+  display: inline-block;
+  width: 530px;
+  height: 410px;
+  background: rgb(40, 80, 181);
+}
+
+.rectangle4 {
+  display: inline-block;
+  width: 530px;
+  height: 410px;
+  background: rgb(129, 40, 181);
+}

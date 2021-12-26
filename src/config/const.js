@@ -1,0 +1,1 @@
+export const DOMEN_SERVER = "http://3.142.115.21"
