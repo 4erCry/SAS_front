@@ -1,28 +1,33 @@
-.mainDiv {
+.mainDiv
+{
     width: 102px;
     height: 68px;
-
     background: white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(200px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 11px;
     color: #584BA9;
     text-align: center;
 }
-
-.mainDiv a {
+.mainDiv a
+{
     font-weight: bold;
     font-size: 0.87em;
 }
-
-.mainDiv a:link {
+.mainDiv a:link
+{
     color: #584BA9;
     text-decoration: none;
 }
-
-.mainDiv a:visited {
+.mainDiv a:visited
+{
     color: #584BA9;
     text-decoration: none;
+}
+@media (max-width: 480px)
+{
+    .mainDiv
+    {
+        width: 90%;
+    }
 }
