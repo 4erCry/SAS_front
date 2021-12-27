@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Button from "../UI/button/Button";
 import classes from "../styles/RegisterForm.module.css";
-import validator from "validator";
-import { DOMEN_SERVER } from "../config/const";
-import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
+import { Route, Link, Redirect } from "react-router-dom";
 
 import { UserContext } from '../contexts/UserContext'
 

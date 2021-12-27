@@ -95,7 +95,7 @@ export default class ChangePassword extends Component {
         password: this.state.password1,
       }),
     }).then((response) => {
-      if (response.status == 200) {
+      if (response.status === 200) {
         this.setShowText(true)
         setTimeout(this.setRedirect, 5000, '/signIn')
       } else {

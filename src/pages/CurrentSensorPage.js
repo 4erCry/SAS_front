@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Line, Chart } from 'react-chartjs-2'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
 
-
 import { UserContext } from '../contexts/UserContext'
 
 import { Link, Redirect } from 'react-router-dom'

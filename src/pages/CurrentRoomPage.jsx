@@ -5,8 +5,6 @@ import Button from "../UI/button/Button";
 import Modal from "../components/Modal";
 import classes from "../styles/CurrentRoomPage.module.css";
 import {useParams} from "react-router-dom";
-import HouseCard from "../components/HouseCard";
-import RoomCard from "../components/RoomCard";
 import SensorCard from "../components/SensorCard";
 
 const CurrentRoomPage = () => {

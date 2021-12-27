@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Button from "../UI/button/Button";
 import classes from "../styles/LoginForm.module.css";
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
-import ChangePassword from "./ChangePassword";
+import { Redirect } from "react-router-dom";
 
 const RestorePassword = () => {
   const [Restore, setLogin] = useState(() => {
@@ -74,7 +73,7 @@ const RestorePassword = () => {
                   email: Restore.email,
                 }),
               }).then((response) => {
-                if (response.status == 200) {
+                if (response.status === 200) {
                   console.log("nice");
                   setShowText({showText: true})
                   setTimeout(setRedirect, 5000, '/')
