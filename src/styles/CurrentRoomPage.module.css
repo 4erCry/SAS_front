@@ -1,13 +1,11 @@
-.mainDiv {
+.mainDiv
+{
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
     padding: 2.5% 8%;
 }
-
-.roomText {
+.roomText
+{
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -15,43 +13,40 @@
     line-height: 42px;
     display: flex;
     align-items: center;
-
-    color: #584BA9;
+    color: rgba(88, 75, 169, 0.7);
 }
-
-.roomSensorsCount {
-    color: #584BA9;
+.roomSensorsCount
+{
+    color: rgba(88, 75, 169, 0.7);
 }
-
-.sensorsGrid {
+.sensorsGrid
+{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 32px;
 }
-
-.roomMenu {
+.roomMenu
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
-.roomForm {
+.roomForm
+{
     height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
     padding: 10px 0 10px 0;
 }
-
-.roomForm input {
+.roomForm input
+{
     background: #F4F4F6;
     border-radius: 10px;
     border: none;
-
     width: 350px;
     height: 32px;
     font-family: Inter, sans-serif;
@@ -59,49 +54,66 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 108.02%;
-    /* or 15px */
-
     display: flex;
     align-items: center;
     text-align: center;
 }
-
-.colorDiv {
+.colorDiv
+{
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
 }
-
-.roomForm input[type="color"] {
+.roomForm input[type="color"]
+{
     width: 40px;
     height: 40px;
 }
-
-.roomForm label {
+.roomForm label
+{
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
 }
-
-.roomForm button {
+.roomForm button
+{
     margin: 40px 0 0 0;
 }
-
-.deleteRoomForm {
+.deleteRoomForm
+{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-
     padding: 0 20px;
 }
-
-.buttonsDiv {
+.buttonsDiv
+{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+}
+@media (max-width: 480px)
+{
+    .roomText
+    {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .roomMenu
+    {
+        display: block;
+        flex-direction: row;
+    }
+    .sensorsGrid
+    {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+    }
 }
