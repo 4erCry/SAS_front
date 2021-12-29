@@ -1,71 +1,71 @@
-.sensor-block {
+.sensor-block
+{
   margin: 80px 160px;
 }
-
-.sensor-info {
+.sensor-info
+{
   display: flex;
   flex-direction: column;
 }
-
-.sensor-url, .sensor-url * {
+.sensor-url, .sensor-url *
+{
   font-size: 20px;
   text-decoration: none;
-  color: #584ba9;
+  color: rgba(88, 75, 169, 0.7);
 }
-
-.sensor-url {
+.sensor-url
+{
   margin-bottom: 20px;
 }
-
-.sensor-name-buttons {
+.sensor-name-buttons
+{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
-.sensor-name {
+.sensor-name
+{
   font-size: 36px;
   font-weight: bold;
-  color: #584ba9;
+  color: rgba(88, 75, 169, 0.7);
 }
-
-.sensor-buttons {
+.sensor-buttons
+{
   display: flex;
   flex-direction: row;
 }
-
-.sensor-buttons > * {
+.sensor-buttons > *
+{
   margin-right: 20px;
 }
-
-.sensor-id {
+.sensor-id
+{
   margin-top: 20px;
   font-size: 28px;
-  color: #584ba9;
+  color: rgba(88, 75, 169, 0.7);
 }
-
-.sensor-type {
+.sensor-type
+{
   margin-top: 10px;
   font-size: 20px;
-  color: #584ba9;
+  color: rgba(88, 75, 169, 0.7);
 }
-
-.sensor-chart-inputs {
+.sensor-chart-inputs
+{
   margin: 20px;
   display: flex;
   flex-direction: row;
 }
-
-.sensor-chart-inputs input {
+.sensor-chart-inputs input
+{
   border: 3px solid #584ba9;
   border-radius: 16px;
   margin-right: 20px;
   padding: 5px;
   font-size: 16px;
 }
-
-
-.sensor-edit-form, .sensor-delete-form {
+.sensor-edit-form, .sensor-delete-form
+{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -76,36 +76,66 @@
   text-align: center;
   margin: auto;
   background: #FFFFFF;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   color: #3B3C40;
   padding: 30px;
 }
-
-.sensor-edit-form > *, .sensor-delete-form > * {
+.sensor-edit-form > *, .sensor-delete-form > *
+{
   margin: 20px auto;
 }
-
-.sensor-edit-form input {
+.sensor-edit-form input
+{
     width: 350px;
     margin: 20px auto;
     padding: 9px 5px;
     background: #FFFFFF;
     border: 1px solid #3B3C40;
-    /* box-sizing: border-box; */
     border-radius: 8px;
     font-size: 14px;
     line-height: 18px;
   }
+.sensor-edit-form input:focus
+{
 
-.sensor-edit-form input:focus {
     border: 1px solid #584BA9;
     background-color: transparent;
     outline: none;
-  }
-
-  .sensor-delete-form-buttons {
+}
+.sensor-delete-form-buttons
+{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+@media (max-width: 480px)
+{
+  .sensor-block
+  {
+    margin: 40px 20px;
   }
+  .sensor-name
+  {
+    font-size: 26px;
+  }
+  .sensor-id
+  {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .sensor-type
+  {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .sensor-buttons
+  {
+    margin-top: 3px;
+  }
+  .sensor-buttons > *
+  {
+    margin-right: 2%;
+  }
+}
+

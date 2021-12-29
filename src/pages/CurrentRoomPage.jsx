@@ -7,6 +7,8 @@ import classes from "../styles/CurrentRoomPage.module.css";
 import {useParams} from "react-router-dom";
 import SensorCard from "../components/SensorCard";
 
+import del_but from "../UI/delete.svg"
+
 const CurrentRoomPage = () => {
     const axios = require('axios');
     const accessToken = useContext(UserContext).accessToken
