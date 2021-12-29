@@ -4,7 +4,7 @@
   height: 60px;
   background: rgba(88, 75, 169, 0.7);
   font-size: 20px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(84, 84, 84, 0.25));
 }
 .header-logo, .header-main-refs
 {
@@ -18,7 +18,7 @@
   margin-right: 60px;
   height: 100%;
 }
-.header-logo a, .header-main-refs a, .header-sign-refs a
+.header-main-refs a, .header-sign-refs a
 {
   display: inline-block;
   height: 100%;
@@ -29,15 +29,138 @@
   margin-right: 60px;
   padding: 20px 0;
 }
+.header-logo a
+{
+  display: inline-block;
+  height: 100%;
+  color: #FFFFFF;
+  margin-right: 60px;
+  padding: 0 0;
+}
 .header-logo a:hover, .header-main-refs a:hover, .header-sign-refs a:hover
 {
   opacity: 0.7;
 }
-@media (max-width: 480px) /*с днём сэндвича*/
+#menu_toggle
 {
-  .link
-  {
-
-  }
-
+  opacity: 0;
 }
+.menu_btn
+{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 17px;
+  left: 17px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after
+{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #FFFFFF;
+}
+.menu_btn > span::before
+{
+  content: '';
+  top: -8px;
+}
+.menu_btn > span::after
+{
+  content: '';
+  top: 8px;
+}
+.menu_box
+{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  height: 225px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background: rgba(88, 75, 169, 0.7);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu_item
+{
+  display: block;
+  padding: 12px 24px;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu_item:hover
+{
+  background: rgba(88, 75, 169, 0.7);
+}
+#menu_toggle:checked ~ .menu_btn > span
+{
+  transform: rotate(45deg);
+}
+#menu_toggle:checked ~ .menu_btn > span::before
+{
+  top: 0;
+  transform: rotate(0);
+}
+#menu_toggle:checked ~ .menu_btn > span::after
+{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu_toggle:checked ~ .menu_box
+{
+  visibility: visible;
+  left: 0;
+}
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after
+{
+  transition-duration: .25s;
+}
+.menu_box
+{
+  transition-duration: .25s;
+}
+.menu_item
+{
+  transition-duration: .25s;
+}
+a:-webkit-any-link
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+@media (min-width: 480px)
+{
+  .burger-menu
+  {
+    display: none;
+  }
+}
+@media (max-width: 480px)
+{
+  .header-main-refs
+  {
+    display: none;
+  }
+  .header-sign-refs
+  {
+    display: none;
+  }
+}
+
